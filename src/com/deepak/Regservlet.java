@@ -41,7 +41,7 @@ public class Regservlet extends HttpServlet {
 		catch(Exception e)
 		{
 			
-			System.out.print(e);
+			out.print(e);
 		}
 		
 	}
