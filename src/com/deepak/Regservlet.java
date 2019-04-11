@@ -23,9 +23,10 @@ public class Regservlet extends HttpServlet {
 		
 		try
 		{
+
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/myiistdb","user","password");
+			Connection con=DriverManager.getConnection("jdbc:mysql://mysql:3306/myiistdb","user","password");
 			Statement stmt=con.createStatement();
 			
 			String q="Insert into registration values('"+enroll+"','"+pass+"','"+fname+"','"+add+"')";
